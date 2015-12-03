@@ -7,3 +7,10 @@ chkconfig iptables off
 vim /etc/selinux/config  改为 SELINUX=disabled
 
 init 6
+
+### smb 开机启动
+vi /etc/rc.d/rc.local
+/etc/rc.d/init.d/smb start
+
+### 添加smbpasswd
+smbpasswd -a cliff
