@@ -1,6 +1,7 @@
-### 关闭防火墙
+### 开启sshd
 chkconfig iptables on
 
+### 关闭防火墙
 chkconfig iptables off
 
 ### 关闭SELinux
